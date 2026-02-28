@@ -1,0 +1,19 @@
+storage:
+  output_dir: "videos"
+  staging_dir: "staging"
+  db_name: "data.db"
+
+rclone:
+  remote_dest: "onedrive1:"
+  transfers: 16
+  buffer_size: "64M"
+  chunk_size: "250M"
+
+concurrency:
+  max_video_tasks: 4
+  max_segment_tasks: 16
+
+api:
+  api_base: "https://20251228.wenjian333.com"
+  play_base: "https://cpt.99tb6.com"
+  token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MDExNzU2MzMsInN1YiI6Ijc1Mjg3MTYifQ.lbbHxieQCAMH8tCzXjtMy5qQRCu3XxQQD-HvhfTHWpE"
